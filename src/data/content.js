@@ -35,4 +35,9 @@ export const clients = [
     industry: "Arquitectura",
     url: "#",
   },
+    {
+    name: "RE/MAX",
+    industry: "Arquitectura",
+    url: "#",
+  }
 ]
