@@ -28,10 +28,10 @@ export default function Navbar() {
         left: 0,
         width: '100%',
         zIndex: 100,
-        backgroundColor: scrolled ? '#0A0A0A' : 'transparent',
+        backgroundColor: scrolled ? 'rgba(10,10,10,0.95)' : 'transparent',
         backdropFilter: scrolled ? 'blur(8px)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(8px)' : 'none',
-        borderBottom: scrolled ? '1px solid #333333' : '1px solid transparent',
+        borderBottom: scrolled ? '1px solid #222222' : '1px solid transparent',
         transition: 'background-color 0.3s ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease',
       }}
     >
@@ -43,7 +43,7 @@ export default function Navbar() {
             style={{
               height: 28,
               width: 'auto',
-              filter: scrolled ? 'none' : 'invert(1)',
+              filter: 'none',
               transition: 'filter 0.3s ease',
             }}
           />
@@ -53,7 +53,7 @@ export default function Navbar() {
               letterSpacing: '0.3em',
               textTransform: 'uppercase',
               fontWeight: 300,
-              color: scrolled ? '#FFFFFF' : '#0A0A0A',
+              color: '#FFFFFF',
               transition: 'color 0.3s ease',
             }}
           >
@@ -71,12 +71,12 @@ export default function Navbar() {
                 fontSize: 11,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
-                color: scrolled ? '#888888' : '#555555',
+                color: '#888888',
                 transition: 'color 0.3s ease',
                 textDecoration: 'none',
               }}
-              onMouseEnter={(e) => e.target.style.color = scrolled ? '#FFFFFF' : '#0A0A0A'}
-              onMouseLeave={(e) => e.target.style.color = scrolled ? '#888888' : '#555555'}
+              onMouseEnter={(e) => e.target.style.color = '#FFFFFF'}
+              onMouseLeave={(e) => e.target.style.color = '#888888'}
             >
               {link.label}
             </a>
@@ -92,15 +92,15 @@ export default function Navbar() {
         >
           <span
             className={`block h-px w-full transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[5.5px]' : ''}`}
-            style={{ backgroundColor: menuOpen || scrolled ? '#FFFFFF' : '#0A0A0A' }}
+            style={{ backgroundColor: '#FFFFFF' }}
           />
           <span
             className={`block h-px w-full transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}
-            style={{ backgroundColor: menuOpen || scrolled ? '#FFFFFF' : '#0A0A0A' }}
+            style={{ backgroundColor: '#FFFFFF' }}
           />
           <span
             className={`block h-px w-full transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[5.5px]' : ''}`}
-            style={{ backgroundColor: menuOpen || scrolled ? '#FFFFFF' : '#0A0A0A' }}
+            style={{ backgroundColor: '#FFFFFF' }}
           />
         </button>
       </div>

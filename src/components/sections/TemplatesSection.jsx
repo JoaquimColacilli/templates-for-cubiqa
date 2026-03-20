@@ -30,7 +30,7 @@ export default function TemplatesSection() {
               fontSize: 'clamp(2rem, 5vw, 3.75rem)',
               fontWeight: 300,
               letterSpacing: '-0.02em',
-              color: '#0A0A0A',
+              color: '#FFFFFF',
             }}
           >
             Templates

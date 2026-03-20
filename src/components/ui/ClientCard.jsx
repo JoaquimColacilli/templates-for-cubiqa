@@ -20,7 +20,7 @@ export default function ClientCard({ client, index }) {
       style={{
         paddingTop: 24,
         paddingBottom: 24,
-        borderBottom: '1px solid #E0E0E0',
+        borderBottom: '1px solid #222222',
         textDecoration: 'none',
         color: 'inherit',
       }}
@@ -29,7 +29,7 @@ export default function ClientCard({ client, index }) {
         <span
           style={{
             fontSize: 11,
-            color: '#888888',
+            color: '#555555',
             letterSpacing: '0.2em',
             fontFamily: 'var(--font-mono)',
           }}
@@ -39,7 +39,7 @@ export default function ClientCard({ client, index }) {
         <div>
           <h4
             className="group-hover:tracking-wider transition-all duration-500"
-            style={{ fontSize: 18, fontWeight: 500, letterSpacing: '0.025em', color: '#0A0A0A' }}
+            style={{ fontSize: 18, fontWeight: 500, letterSpacing: '0.025em', color: '#FFFFFF' }}
           >
             {name}
           </h4>
@@ -51,7 +51,7 @@ export default function ClientCard({ client, index }) {
 
       <svg
         className="w-4 h-4 group-hover:translate-x-1 transition-all duration-300 shrink-0"
-        style={{ color: '#CCCCCC' }}
+        style={{ color: '#333333' }}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

@@ -4,7 +4,7 @@ export default function Footer() {
       style={{
         backgroundColor: '#0A0A0A',
         color: '#FFFFFF',
-        borderTop: '1px solid #333333',
+        borderTop: '1px solid #222222',
       }}
     >
       <div className="wrapper" style={{ paddingTop: 80, paddingBottom: 80 }}>
@@ -115,7 +115,7 @@ export default function Footer() {
           style={{
             marginTop: 64,
             paddingTop: 32,
-            borderTop: '1px solid #333333',
+            borderTop: '1px solid #222222',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',

@@ -3,14 +3,14 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #FFFFFF;
-  --text: #0A0A0A;
+  --bg: #0A0A0A;
+  --text: #FFFFFF;
   --gray: #888888;
   --gray-dim: #555555;
-  --card-bg: #F5F5F5;
-  --card-border: #E0E0E0;
-  --card-border-hover: #CCCCCC;
-  --placeholder-bg: #E8E8E8;
+  --card-bg: #141414;
+  --card-border: #222222;
+  --card-border-hover: #333333;
+  --placeholder-bg: #1A1A1A;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
 }
@@ -36,8 +36,8 @@ body {
 }
 
 ::selection {
-  background: rgba(10, 10, 10, 0.12);
-  color: #0A0A0A;
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +49,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #CCCCCC;
+  background: #333333;
   border-radius: 2px;
 }
 
@@ -75,4 +75,19 @@ body {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* Hide Spline watermark */
+a[href*="spline"],
+a[href*="spline.design"],
+div[data-logo],
+canvas ~ a,
+canvas ~ div a {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }

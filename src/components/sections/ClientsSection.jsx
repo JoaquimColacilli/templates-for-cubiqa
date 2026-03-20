@@ -30,7 +30,7 @@ export default function ClientsSection() {
               fontSize: 'clamp(2rem, 5vw, 3.75rem)',
               fontWeight: 300,
               letterSpacing: '-0.02em',
-              color: '#0A0A0A',
+              color: '#FFFFFF',
             }}
           >
             Clientes
@@ -38,9 +38,9 @@ export default function ClientsSection() {
         </motion.div>
       </div>
 
-      {/* Client list — separated from heading */}
+      {/* Client list */}
       <div className="wrapper" style={{ marginTop: 48 }}>
-        <div style={{ borderTop: '1px solid #E0E0E0' }}>
+        <div style={{ borderTop: '1px solid #222222' }}>
           {clients.map((client, i) => (
             <ClientCard key={client.name} client={client} index={i} />
           ))}

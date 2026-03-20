@@ -25,27 +25,27 @@ export default function TemplateCard({ template, index }) {
       }}
       className="group block overflow-hidden transition-all duration-700"
       style={{
-        border: '1px solid #E0E0E0',
-        backgroundColor: '#F5F5F5',
+        border: '1px solid #222222',
+        backgroundColor: '#141414',
         textDecoration: 'none',
         color: 'inherit',
       }}
-      onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#CCCCCC'; e.currentTarget.style.transform = 'translateY(-2px)' }}
-      onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#E0E0E0'; e.currentTarget.style.transform = 'translateY(0)' }}
+      onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#333333'; e.currentTarget.style.transform = 'translateY(-2px)' }}
+      onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#222222'; e.currentTarget.style.transform = 'translateY(0)' }}
     >
       {/* Screenshot area */}
-      <div className="relative aspect-[16/10] overflow-hidden" style={{ backgroundColor: '#EEEEEE' }}>
+      <div className="relative aspect-[16/10] overflow-hidden" style={{ backgroundColor: '#1A1A1A' }}>
         {/* Skeleton / Fallback */}
         {(!imgLoaded || imgError) && (
           <div
             className="absolute inset-0 flex flex-col items-center justify-center"
-            style={{ backgroundColor: '#E8E8E8' }}
+            style={{ backgroundColor: '#1A1A1A' }}
           >
             <span
               style={{
                 fontSize: 28,
                 fontWeight: 500,
-                color: '#CCCCCC',
+                color: '#333333',
                 marginBottom: 8,
                 fontFamily: 'var(--font-mono)',
               }}
@@ -57,7 +57,7 @@ export default function TemplateCard({ template, index }) {
                 fontSize: 10,
                 letterSpacing: '0.3em',
                 textTransform: 'uppercase',
-                color: '#888888',
+                color: '#555555',
                 fontFamily: 'var(--font-mono)',
               }}
             >
@@ -82,7 +82,7 @@ export default function TemplateCard({ template, index }) {
         <div
           className="absolute inset-0 transition-all duration-700"
           style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.04)',
+            backgroundColor: 'rgba(0, 0, 0, 0.15)',
           }}
           onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0)' }}
         />
@@ -93,7 +93,7 @@ export default function TemplateCard({ template, index }) {
           style={{
             fontSize: 11,
             letterSpacing: '0.2em',
-            color: 'rgba(0, 0, 0, 0.3)',
+            color: 'rgba(255, 255, 255, 0.3)',
             fontFamily: 'var(--font-mono)',
           }}
         >
@@ -104,7 +104,7 @@ export default function TemplateCard({ template, index }) {
         <div className="absolute top-4 right-5 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-500">
           <svg
             className="w-4 h-4"
-            style={{ color: '#0A0A0A' }}
+            style={{ color: '#FFFFFF' }}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -119,7 +119,7 @@ export default function TemplateCard({ template, index }) {
       <div style={{ padding: '20px 24px' }}>
         <h3
           className="group-hover:tracking-wider transition-all duration-500"
-          style={{ fontSize: 18, fontWeight: 500, letterSpacing: '0.025em', marginBottom: 8, color: '#0A0A0A' }}
+          style={{ fontSize: 18, fontWeight: 500, letterSpacing: '0.025em', marginBottom: 8, color: '#FFFFFF' }}
         >
           {name}
         </h3>
@@ -141,8 +141,8 @@ export default function TemplateCard({ template, index }) {
                 fontSize: 10,
                 letterSpacing: '0.1em',
                 textTransform: 'uppercase',
-                border: '1px solid #0A0A0A',
-                color: '#0A0A0A',
+                border: '1px solid #333333',
+                color: '#888888',
                 fontFamily: 'var(--font-mono)',
               }}
             >
