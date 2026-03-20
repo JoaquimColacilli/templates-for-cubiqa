@@ -3,13 +3,14 @@
 @import "tailwindcss";
 
 :root {
-  --black: #0A0A0A;
-  --white: #FFFFFF;
+  --bg: #FFFFFF;
+  --text: #0A0A0A;
   --gray: #888888;
   --gray-dim: #555555;
-  --gray-border: rgba(255, 255, 255, 0.08);
-  --gray-border-hover: rgba(255, 255, 255, 0.16);
-  --gray-subtle: rgba(255, 255, 255, 0.04);
+  --card-bg: #F5F5F5;
+  --card-border: #E0E0E0;
+  --card-border-hover: #CCCCCC;
+  --placeholder-bg: #E8E8E8;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
 }
@@ -28,15 +29,15 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: rgba(10, 10, 10, 0.12);
+  color: #0A0A0A;
 }
 
 ::-webkit-scrollbar {
@@ -44,14 +45,34 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--black);
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gray);
+  background: #CCCCCC;
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--white);
+  background: var(--gray);
+}
+
+/* Container — centering wrapper */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Footer grid — responsive */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
