@@ -27,6 +27,13 @@ export const templates = [
     tags: ["Residencial", "Warm", "Arquitectura"],
     url: "https://v0-merced-landing-page.vercel.app/",
   },
+  {
+    id: "05",
+    name: "Solar",
+    description: "Editorial warm con render hero full-bleed, Kuula 360°, sticky scroll narrativo y tabla de disponibilidad live.",
+    tags: ["Real Estate", "Warm", "Editorial"],
+    url: "https://solar-cubiqa-template.netlify.app/",
+  },
 ]
 
 export const clients = [
